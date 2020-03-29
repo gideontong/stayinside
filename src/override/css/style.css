@@ -1,0 +1,52 @@
+/* import font: assistant */
+@import url('https://fonts.googleapis.com/css?family=Assistant:600,700,800&display=swap');
+
+body {
+  font-family: 'Assistant', sans-serif;
+  display: grid;
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 5% 65%;
+}
+
+.aside {
+  background: #F5EDEB;
+}
+
+
+.box {
+  border:3px solid #000;
+  background-color: #F0E1C2;
+  border-radius: 20px;
+}
+
+.cal {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+
+.btn {
+  padding: 3px;
+  text-align: center;
+}
+
+.effect {
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: -1px 0 0 1px #FA7F8E,
+              -1px -1px 0 1px #FB927F,
+              -1px -1px 0 1px #FB927F,
+              0 -1px 0 1px #FDC655,
+              0 1px 0 1px #FDC655,
+              1px -1px 0 1px #F0E1C2,
+              1px 1px 0 1px #F0E1C2,
+              1px 0 0 1px #FFC7C0;
+  background: linear-gradient(left, #FCAA6C, #FFC7C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -16,8 +16,20 @@ main {
     flex: 1 0 auto;
 }
 
+.circle {
+  border-radius: 50%;
+  width: 2vw;
+  height: 2vw;
+  padding: 2px;
+  margin: 4px;
+
+  background: #C4C4C4;
+  color: white;
+  text-align: center;
+}
+
 #stayInside {
-    background-image: url("assets/background.png");
+    background-image: url("assets/bg.png");
     position: relative;
     background-size: 100%;
 }
@@ -29,13 +41,6 @@ main {
 
 #siButtons a {
     margin: 3px;
-}
-
-#siDoggo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
 }
 
 #stayInsideContent {

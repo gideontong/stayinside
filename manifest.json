@@ -1,9 +1,9 @@
 {
-  "name": "LA-Hacks-2020",
+  "name": "stayinside",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Learn something new on every new tab",
-  "homepage_url": "https://www.github.com/gideontong/LA-Hacks-2020",
+  "homepage_url": "https://www.github.com/gideontong/stayinside",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

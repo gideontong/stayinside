@@ -30,6 +30,14 @@ li {
   text-align: center;
 }
 
+.day-grid-grey {
+  background-color: black;
+}
+
+.day-grid-fill {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FA7F8E, #FDC655);
+}
+
 ul.day-grid li {
   height: 7vw;
   width: 7vw;
@@ -64,6 +72,5 @@ ul.day-grid li {
   ul.day-grid li {
     height: 7vw;
     width: 7vw;
-    border: 2px solid #787777;
   }
 }

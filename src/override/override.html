@@ -26,7 +26,7 @@
 				<label for="psw"><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
 
-				<button onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">Create account</button>
+				<button id="createAnAccount" class="close" title="Close Modal">Create account</button>
 			</div>
 
 			<div class="container" style="background-color:#f1f1f1">
@@ -36,7 +36,7 @@
 
   <main class="hg__main">
 		<!-- Overlay -->
-		<button class="login" onclick="document.getElementById('idlogin-btn').style.display='block'" style="width:auto;">Login</button>
+		<button class="login" id="loginAccount" style="width:auto;">Login</button>
 
 		<!-- Calendar -->
 		<header>April 2020</header>
@@ -111,6 +111,5 @@
 
 	<!-- Bottom -->
   <footer class="hg__footer">Footer</footer>
-
 </body>
 </html>

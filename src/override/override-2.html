@@ -6,21 +6,43 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<!-- Overlay -->
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+	<div id="id01" class="modal">
+
+	  <form class="modal-content animate" action="/action_page.php" method="post">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	      <header>stayinside</header>
+	    </div>
+
+	    <div class="container">
+	      <label for="uname"><b>Username</b></label>
+	      <input type="text" placeholder="Enter Username" name="uname" required>
+
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+
+	      <button onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Create account</button>
+	    </div>
+
+	    <div class="container" style="background-color:#f1f1f1">
+	    </div>
+	  </form>
+	</div>
+
 	<div class="">
 		<div class="left">
-			<br> <br> <br>
-			<header>stayinside</header>
 			<div class="bg"><img src="assets/bg.png" alt="Background" style="width:500px;height:100vh";></div>
 			<br>
-			<div class="box">
-				<br>
 				<div class="box-img"></div>
 				<br>
 				<div class="btn"><button class="effect">View on r/</button></div>
 				<div class="btn"><button class="effect">Do with friends</button></div>
 				<div class="btn"><button class="effect">New activity</button></div>
 				<div class="btn"><button class="effect">Complete</button></div>
-			</div>
 		</div>
 
 	<div>
@@ -28,6 +50,7 @@
 	</div>
 
 	<div class="right">
+
 		<!-- Calendar -->
 		<header>April 2020</header>
 		<div class="cal">
@@ -82,6 +105,18 @@
 		</div>
 	</div>
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>

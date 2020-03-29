@@ -1,6 +1,6 @@
 # stayinside
 
-!(/docs/images/banner.png)
+![Banner](/docs/images/banner.png)
 
 Learn something new on every New Tab
 

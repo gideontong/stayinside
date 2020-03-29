@@ -105,7 +105,6 @@ header {
   -webkit-text-fill-color: black;
 }
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -114,38 +113,6 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 10px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #FCAA6C;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 10px;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
 }
 
 .modal {
@@ -160,13 +127,14 @@ img.avatar {
   background-color: rgba(0,0,0,0.6);
   padding-top: 60px;
   border-radius: 10px;
+  z-index: 1;
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 30%;
 }
 
@@ -183,14 +151,4 @@ img.avatar {
 @keyframes animatezoom {
   from {transform: scale(0)}
   to {transform: scale(1)}
-}
-
-.animate-back {
-  -webkit-animation: animatezoom-back 0.6s;
-  animation: animatezoom-back 0.6s
-}
-
-@keyframes animatezoom-back {
-  from {transform: scale(1)}
-  to {transform: scale(0)}
 }

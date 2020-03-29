@@ -1,6 +1,14 @@
 /* import font: assistant */
 @import url('https://fonts.googleapis.com/css?family=Assistant:600,700,800&display=swap');
 
+.hg__header { grid-area: header; }
+.hg__main { grid-area: main; }
+.hg__left { grid-area: navigation; }
+
+header{
+  font-size: 5vh;
+  font-weight: 800;
+
 .bttn {
   padding: 20px 60px 20px 60px;
   border-radius: 10px;
@@ -72,10 +80,45 @@
 
 header {
   text-align: center;
+  color: #757575;
+}
+
+button {
+  font-family: 'Assistant', sans-serif;
+
+  border-radius: 10px;
+  background-color: white;
+  border: 10px;
+  width: 20vh;
+  margin-top: 50px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 5px;
+
+  box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 100rem;
+  font-size: 1rem;
+  border: solid 3px transparent;zz
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FA7F8E, #FDC655);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+button:hover {
+  box-shadow: none;
+  color: white;
 }
 
 .hg {
   font-family: 'Assistant', sans-serif;
+	display: grid;
+	grid-template-areas: "navigation main ads";
+	grid-template-columns: 30% 1fr;
+	grid-template-rows: 1fr 30px;
+	min-height: 100px;
+
   display: grid;
   grid-template-areas: "navigation main ads"
     "footer footer footer";
@@ -89,20 +132,42 @@ header {
   background-image: url("assets/bg.png");
   position: relative;
   background-size: 100%;
-  padding: 10px;
+  padding-left: 20px;
+  z-index: 0;
 }
 
 .box-img {
+  height: 235px;
+  border:3px solid #000;
   height: 25vh;
   border: 3px solid #000;
   background-color: white;
   border-radius: 20px;
   position: relative;
-  padding: 10px;
+  padding: 20px;
   width: fill;
 }
 
+.box {
+  height:650px;
+  border:3px solid #000;
+  background-color: #F0E1C2;
+  border-radius: 20px;
+  padding: 20px;
+  width: fill;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
+	.hg {
+		grid-template-areas: "navigation"
+		                     "main";
+		grid-template-columns: 100%;
+	}
   .hg {
     grid-template-areas: "navigation"
       "main"
@@ -114,11 +179,25 @@ header {
   .hg__main {
     align-items: center;
   }
+
+  .box {
+    height: 70vh;
+  }
 }
 
 /* RIGHT */
-.login {
-  align-items: right;
+.login-btn {
+  float: right;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .hg__main {
@@ -144,6 +223,11 @@ header {
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   width: 30%;
+}
+
+.floaty {
+  text-align: center;
+
 }
 
 .close:hover,
@@ -179,9 +263,4 @@ header {
   to {
     transform: scale(0)
   }
-}
-
-/* FOOTER */
-.hg__footer {
-  background-color: pink;
 }

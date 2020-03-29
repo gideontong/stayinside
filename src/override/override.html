@@ -17,17 +17,18 @@
 	<div id="idlogin-btn" class="modal">
 
 		<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="floaty"><h1>Learn something new with every tab</h1></div>
+			<div class="floaty"><img src="assets/house.png" alt="Doge house" width=100px height=100px></div>
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('idlogin-btn').style.display='none'" class="close"
 					title="Close Modal">&times;</span>
 			</div>
-
 			<div class="container">
-				<label for="uname"><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
 
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
 
 				<button id="createAnAccount" class="close" title="Close Modal">Create account</button>
 			</div>
@@ -39,6 +40,7 @@
 
 	<main class="hg__main">
 		<!-- Overlay -->
+		<button class="login-btn" onclick="document.getElementById('idlogin-btn').style.display='block'">Login</button>
 		<div style="align-items: right;"><button class="login smallbtn" id="loginAccount" style="width:auto;">Login</button>
 		</div>
 
@@ -158,6 +160,16 @@
 	<!-- Left -->
 	<aside class="hg__left"> <br>
 		<div class="left">
+			<div class="bg"></div>
+			<div class="box">
+				<header>stayinside</header>
+				<br>
+				<div class="box-img"></div>
+				<div><h1>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</h1></div>
+				<div class="btn"><button class="effect">View on YouTube</button></div>
+				<div class="btn"><button class="effect">Do with friends</button></div>
+				<div class="btn"><button class="effect">New activity</button></div>
+				<div class="btn"><button class="effect">Complete</button></div>
 			<div class="scaleable-wrapper" id="scaleable-wrapper">
 				<div class="wrap" id="wrap">
 					<div class="bg"></div>
@@ -171,10 +183,9 @@
 					<div class="center"><img src="assets/doge.gif" alt="Doge"></div>
 				</div>
 			</div>
+			<img src="assets/doge.gif" alt="Doge" width="204" height="161">
+		</div>
 	</aside>
-
-	<!-- Bottom -->
-	<footer class="hg__footer">Footer</footer>
 </body>
 
 </html>

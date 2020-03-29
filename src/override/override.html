@@ -1,170 +1,116 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+	<title>stayinside</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
-	<title>stayinside</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cal.css">
+	<link rel="script" href="js/functions.css">
 
-	<!-- Materalize -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" href="styles.css">
 </head>
+<body class="hg">
 
-<body>
-	<main>
-		<div class="row">
-			<div class="col s3" id="stayInside">
-				<h3 id="siTitle">stayinside</h3>
-				<div class="container">
-					<div class="card">
-						<div class="card-content" style="text-align: center;">
-							<span class="card-title">March 28th</span>
-						</div>
-						<div class="card-image">
-						  <img src="assets/placeholder.jpg">
-						  <span class="card-title">from unsplash.com</span>
-						</div>
-						<div class="card-content">
-						  <p>You can learn to spin a pen today.</p>
-						</div>
-						<div class="card-action center" id="siButtons">
-						  <a href="https://www.youtube.com/watch?v=TvytweSNkiE" target="_blank" class="waves-effect waves-light btn">View on YouTube</a><br>
-						  <a href="#" class="waves-effect waves-light btn">Do With Friends</a><br>
-						  <a href="#" class="waves-effect waves-light btn">New Activity</a><br>
-						  <a href="#" class="waves-effect waves-light btn">Complete</a>
-						</div>
-					  </div>
-				</div>
+	<div id="idlogin-btn" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">&times;</span>
 			</div>
-			<div class="col s9" id="stayInsideContent">
-				<div id="expandoBox">
-					<ul id="makeBoxes">
-						<li>SUN</li>
-						<li>MON</li>
-						<li>TUE</li>
-						<li>WED</li>
-						<li>THUR</li>
-						<li>FRI</li>
-						<li>SAT</li>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-						<li>7</li>
-						<li>8</li>
-						<li>9</li>
-						<li>10</li>
-						<li>11</li>
-						<li>12</li>
-						<li>13</li>
-						<li>14</li>
-						<li>15</li>
-						<li>16</li>
-						<li>17</li>
-						<li>18</li>
-						<li>19</li>
-						<li>20</li>
-						<li>21</li>
-						<li>22</li>
-						<li>23</li>
-						<li>24</li>
-						<li>25</li>
-						<li>26</li>
-						<li>27</li>
-						<li>28</li>
-						<li>29</li>
-						<li>30</li>
-						<li>31</li>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-					</ul>
-				</div>
+
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">Create account</button>
 			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+			</div>
+		</form>
+	</div>
+
+  <main class="hg__main">
+		<!-- Overlay -->
+		<button class="login" onclick="document.getElementById('idlogin-btn').style.display='block'" style="width:auto;">Login</button>
+
+		<!-- Calendar -->
+		<header>April 2020</header>
+			<ul class="weekdays">
+				<li class="day-bg">S</li>
+				<li class="day-bg">M</li>
+				<li class="day-bg">T</li>
+				<li class="day-bg">W</li>
+				<li class="day-bg">T</li>
+				<li class="day-bg">F</li>
+				<li class="day-bg">S</li>
+				</li>
+			</ul>
+
+			<ul class="day-grid">
+				<li class="month=prev"></li>
+				<li class="month=prev"></li>
+				<li class="month=prev"></li>
+				<li><div class="circle">1</div></li>
+				<li><div class="circle">2</div></li>
+				<li><div class="circle">3</div></li>
+				<li><div class="circle">4</div></li>
+				<li><div class="circle">5</div></li>
+				<li><div class="circle">6</div></li>
+				<li><div class="circle">7</div></li>
+				<li><div class="circle">8</div></li>
+				<li><div class="circle">9</div></li>
+				<li><div class="circle">10</div></li>
+				<li><div class="circle">11</div></li>
+				<li><div class="circle">12</div></li>
+				<li><div class="circle">13</div></li>
+				<li><div class="circle">14</div></li>
+				<li><div class="circle">15</div></li>
+				<li><div class="circle">16</div></li>
+				<li><div class="circle">17</div></li>
+				<li><div class="circle">18</div></li>
+				<li><div class="circle">19</div></li>
+				<li><div class="circle">20</div></li>
+				<li><div class="circle">21</div></li>
+				<li><div class="circle">22</div></li>
+				<li><div class="circle">23</div></li>
+				<li><div class="circle">24</div></li>
+				<li><div class="circle">25</div></li>
+				<li><div class="circle">26</div></li>
+				<li><div class="circle">27</div></li>
+				<li><div class="circle">28</div></li>
+				<li><div class="circle">29</div></li>
+				<li><div class="circle">30</div></li>
+				<li class="month-next"></li>
+				<li class="month-next"></li>
+			</ul>
 		</div>
 	</main>
 
-	<footer class="page-footer orange">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">About stayinside</h5>
-					<p class="grey-text text-lighten-4">
-						Created by a team of college students, stayinside helps you get through your
-						quarantining habits by teaching you something new every time you open a new tab.
-						Got questions? Feel free to email us at an email coming soon!
-					</p>
-
-
-				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Settings</h5>
-					<ul>
-						<li><a class="white-text" href="#!">Easter Egg</a></li>
-						<li><a class="white-text" href="#!">Easter Egg</a></li>
-						<li><a class="white-text" href="#!">Easter Egg</a></li>
-					</ul>
-				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Meet Us</h5>
-					<ul>
-						<li><a class="white-text" href="https://gideontong.com" target="_blank">Gideon Tong</a></li>
-						<li><a class="white-text" href="http://kendallnakai.com/" target="_blank">Kendall Nakai</a></li>
-						<li><a class="white-text" href="https://github.com/WilliamTTran" target="_blank">William Tran</a></li>
-					</ul>
+	<!-- Left -->
+  <aside class="hg__left"> <br>
+		<div class="left">
+			<div class="scaleable-wrapper" id="scaleable-wrapper">
+				<div class="wrap" id="wrap">
+					<div class="bg"></div>
+					<header>stayinside</header> <br>
+					<div class="box-img"></div>
+					<br>
+					<div class="btn"><button class="effect">View on r/</button></div>
+					<div class="btn"><button class="effect">Do with friends</button></div>
+					<div class="btn"><button class="effect">New activity</button></div>
+					<div class="btn"><button class="effect">Complete</button></div>
+					<img src="assets/doge.gif" alt="Doge">
 				</div>
 			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				Made with <i class="material-icons" style="font-size: unset; color: #E91E63">favorite</i> at LA Hacks
-				2020!</a>
-			</div>
-		</div>
-	</footer>
-	<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		var winHeight = $(window).height();
-		var height = (winHeight * 10) / 100;
-		var lineHeight = height + "px";
-		$("#makeBoxes").children().css("line-height", lineHeight);
-		$("#makeBoxes").children().css("height", height);
-	</script>
-</body>
+	</aside>
 
-</html>
-=======
-	<title></title>
-</head>
-<body>
+	<!-- Bottom -->
+  <footer class="hg__footer">Footer</footer>
 
 </body>
 </html>
->>>>>>> parent of 2317fc9... Work in progress + assets
-=======
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
->>>>>>> parent of 2317fc9... Work in progress + assets
-=======
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
->>>>>>> parent of 2317fc9... Work in progress + assets

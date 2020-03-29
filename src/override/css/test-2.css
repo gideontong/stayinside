@@ -1,0 +1,196 @@
+/* import font: assistant */
+@import url('https://fonts.googleapis.com/css?family=Assistant:600,700,800&display=swap');
+
+body {
+  font-family: 'Assistant', sans-serif;
+  display: grid;
+  background: white;
+}
+
+header {
+  text-align: center;
+  font-size: 60px;
+  color: #757575;
+  font-weight: 800;
+}
+
+.left {
+  top: 0;
+  left: 0;
+  float: left;
+  width: 30%;
+  background-color: #FBE1DF;
+}
+
+.right {
+  width: 65%;
+  float: right;
+}
+
+.wrap {
+  width: 600px;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.scaleable-wrapper {
+  padding: 20px;
+  resize: both;
+  position: relative;
+  background: #666;
+  height: 400px;
+}
+
+.box-img {
+  height: 25vh;
+  border:3px solid #000;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  width: fill;
+}
+
+.bg {
+  left: 0;
+  top: 0;
+  height: 50vh;
+  position: absolute;
+  float: left;
+  z-index: 0;
+  background-color: #FBE1DF;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.cal {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.btn {
+  font-size: 10px;
+  padding: 3px;
+  text-align: center;
+}
+
+.effect {
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: -1px 0 0 1px #FA7F8E,
+              -1px -1px 0 1px #FB927F,
+              -1px -1px 0 1px #FB927F,
+              0 -1px 0 1px #FDC655,
+              0 1px 0 1px #FDC655,
+              1px -1px 0 1px #F0E1C2,
+              1px 1px 0 1px #F0E1C2,
+              1px 0 0 1px #FFC7C0;
+  background: linear-gradient(left, #FCAA6C, #FFC7C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #FCAA6C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 60px;
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.animate-back {
+  -webkit-animation: animatezoom-back 0.6s;
+  animation: animatezoom-back 0.6s
+}
+
+@keyframes animatezoom-back {
+  from {transform: scale(1)}
+  to {transform: scale(0)}
+}

@@ -2,6 +2,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 1em;
+  align-items: center;
 }
 
 li {
@@ -13,7 +14,7 @@ li {
 .day-bg {
   background: -webkit-linear-gradient(#FB927F, #FCD88E);
   text-align: center;
-  font-size: 25px;
+  font-size: 3vh;
   width: 7.5vw;
 }
 
@@ -42,6 +43,12 @@ ul.day-grid li {
     grid-gap: 0.5em;
   }
 
+  li {
+    display: grid;
+    border-radius: 8px;
+    transform: translateX(-4.5vh);
+  }
+
   .circle {
     font-size: 1.25vh;
     border-radius: 50%;
@@ -58,10 +65,5 @@ ul.day-grid li {
     height: 7vw;
     width: 7vw;
     border: 2px solid #787777;
-  }
-
-  li {
-    display: grid;
-    border-radius: 8px;
   }
 }

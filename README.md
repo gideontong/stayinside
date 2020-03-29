@@ -2,6 +2,8 @@
 
 ![Banner](/docs/images/banner.png)
 
-Learn something new on every New Tab
+**stayinside** allows you to learn something new every time you open your new tab page!
 
-To do: make a name and replace all strings of `stayinside` with the name
+## Usage
+
+Download the latest release candidate, which at the time of writing is [0.1-beta](https://www.github.com/gideontong/stayinside/releases) from the releases tab, and load the zipped package into your web browser of choice.

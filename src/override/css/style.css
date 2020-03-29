@@ -8,77 +8,6 @@
 header{
   font-size: 5vh;
   font-weight: 800;
-
-.bttn {
-  padding: 20px 60px 20px 60px;
-  border-radius: 10px;
-  background: #fcad26;
-  color: #fff;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  display: inline-block;
-  margin: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-}
-
-.smallbtn {
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  background: #fcad26;
-  color: #fff;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  display: inline-block;
-  margin: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-}
-
-.hg__header {
-  grid-area: header;
-}
-
-.hg__footer {
-  grid-area: footer;
-}
-
-.hg__main {
-  grid-area: main;
-}
-
-.hg__left {
-  grid-area: navigation;
-}
-
-.center {
-  text-align: center;
-}
-
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.fill img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-header {
   text-align: center;
   color: #757575;
 }
@@ -100,7 +29,7 @@ button {
   box-shadow: 2px 1000px 1px #fff inset;
   border-radius: 100rem;
   font-size: 1rem;
-  border: solid 3px transparent;zz
+  border: solid 3px transparent;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FA7F8E, #FDC655);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -118,13 +47,6 @@ button:hover {
 	grid-template-columns: 30% 1fr;
 	grid-template-rows: 1fr 30px;
 	min-height: 100px;
-
-  display: grid;
-  grid-template-areas: "navigation main ads"
-    "footer footer footer";
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 1fr 30px;
-  min-height: 100vh;
 }
 
 /* LEFT */
@@ -139,8 +61,6 @@ button:hover {
 .box-img {
   height: 235px;
   border:3px solid #000;
-  height: 25vh;
-  border: 3px solid #000;
   background-color: white;
   border-radius: 20px;
   position: relative;
@@ -168,16 +88,9 @@ img {
 		                     "main";
 		grid-template-columns: 100%;
 	}
-  .hg {
-    grid-template-areas: "navigation"
-      "main"
-      "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 100% 1fr 30px;
-  }
 
   .hg__main {
-    align-items: center;
+      align-items: center;
   }
 
   .box {
@@ -212,8 +125,8 @@ input[type=text], input[type=password] {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
   padding-top: 60px;
   border-radius: 10px;
 }
@@ -241,13 +154,8 @@ input[type=text], input[type=password] {
 }
 
 @keyframes animatezoom {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
+  from {transform: scale(0)}
+  to {transform: scale(1)}
 }
 
 .animate-back {
@@ -256,11 +164,6 @@ input[type=text], input[type=password] {
 }
 
 @keyframes animatezoom-back {
-  from {
-    transform: scale(1)
-  }
-
-  to {
-    transform: scale(0)
-  }
+  from {transform: scale(1)}
+  to {transform: scale(0)}
 }

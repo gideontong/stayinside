@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>stayinside</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,10 +7,9 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/cal.css">
-	<link rel="script" href="js/functions.js">
+	<link rel="script" href="js/functions.css">
 
 </head>
-
 <body class="hg">
 
 	<div id="idlogin-btn" class="modal">
@@ -19,10 +17,7 @@
 		<form class="modal-content animate" action="/action_page.php" method="post">
 			<div class="floaty"><h1>Learn something new with every tab</h1></div>
 			<div class="floaty"><img src="assets/house.png" alt="Doge house" width=100px height=100px></div>
-			<div class="imgcontainer">
-				<span onclick="document.getElementById('idlogin-btn').style.display='none'" class="close"
-					title="Close Modal">&times;</span>
-			</div>
+
 			<div class="container">
 				<label for="email"><b>Email</b></label>
 				<input type="text" placeholder="Enter Email" name="email" required>
@@ -30,7 +25,7 @@
 				<label for="password"><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="password" required>
 
-				<button id="createAnAccount" class="close" title="Close Modal">Create account</button>
+				<button onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">Create account</button>
 			</div>
 
 			<div class="container" style="background-color:#f1f1f1">
@@ -38,127 +33,65 @@
 		</form>
 	</div>
 
-	<main class="hg__main">
+  <main class="hg__main">
 		<!-- Overlay -->
 		<button class="login-btn" onclick="document.getElementById('idlogin-btn').style.display='block'">Login</button>
-		<div style="align-items: right;"><button class="login smallbtn" id="loginAccount" style="width:auto;">Login</button>
-		</div>
 
 		<!-- Calendar -->
 		<header>April 2020</header>
-		<ul class="weekdays">
-			<li class="day-bg">S</li>
-			<li class="day-bg">M</li>
-			<li class="day-bg">T</li>
-			<li class="day-bg">W</li>
-			<li class="day-bg">T</li>
-			<li class="day-bg">F</li>
-			<li class="day-bg">S</li>
-			</li>
-		</ul>
+			<ul class="weekdays">
+				<li class="day-bg">S</li>
+				<li class="day-bg">M</li>
+				<li class="day-bg">T</li>
+				<li class="day-bg">W</li>
+				<li class="day-bg">T</li>
+				<li class="day-bg">F</li>
+				<li class="day-bg">S</li>
+				</li>
+			</ul>
 
-		<ul class="day-grid">
-			<li class="month=prev"></li>
-			<li class="month=prev"></li>
-			<li class="month=prev"></li>
-			<li>
-				<div class="circle">1</div>
-			</li>
-			<li>
-				<div class="circle">2</div>
-			</li>
-			<li>
-				<div class="circle">3</div>
-			</li>
-			<li>
-				<div class="circle">4</div>
-			</li>
-			<li>
-				<div class="circle">5</div>
-			</li>
-			<li>
-				<div class="circle">6</div>
-			</li>
-			<li>
-				<div class="circle">7</div>
-			</li>
-			<li>
-				<div class="circle">8</div>
-			</li>
-			<li>
-				<div class="circle">9</div>
-			</li>
-			<li>
-				<div class="circle">10</div>
-			</li>
-			<li>
-				<div class="circle">11</div>
-			</li>
-			<li>
-				<div class="circle">12</div>
-			</li>
-			<li>
-				<div class="circle">13</div>
-			</li>
-			<li>
-				<div class="circle">14</div>
-			</li>
-			<li>
-				<div class="circle">15</div>
-			</li>
-			<li>
-				<div class="circle">16</div>
-			</li>
-			<li>
-				<div class="circle">17</div>
-			</li>
-			<li>
-				<div class="circle">18</div>
-			</li>
-			<li>
-				<div class="circle">19</div>
-			</li>
-			<li>
-				<div class="circle">20</div>
-			</li>
-			<li>
-				<div class="circle">21</div>
-			</li>
-			<li>
-				<div class="circle">22</div>
-			</li>
-			<li>
-				<div class="circle">23</div>
-			</li>
-			<li>
-				<div class="circle">24</div>
-			</li>
-			<li>
-				<div class="circle">25</div>
-			</li>
-			<li>
-				<div class="circle">26</div>
-			</li>
-			<li>
-				<div class="circle">27</div>
-			</li>
-			<li>
-				<div class="circle">28</div>
-			</li>
-			<li>
-				<div class="circle">29</div>
-			</li>
-			<li>
-				<div class="circle">30</div>
-			</li>
-			<li class="month-next"></li>
-			<li class="month-next"></li>
-		</ul>
+			<ul class="day-grid">
+				<li class="month=prev"></li>
+				<li class="month=prev"></li>
+				<li class="month=prev"></li>
+				<li><div class="circle">1</div></li>
+				<li><div class="circle">2</div></li>
+				<li><div class="circle">3</div></li>
+				<li><div class="circle">4</div></li>
+				<li><div class="circle">5</div></li>
+				<li><div class="circle">6</div></li>
+				<li><div class="circle">7</div></li>
+				<li><div class="circle">8</div></li>
+				<li><div class="circle">9</div></li>
+				<li><div class="circle">10</div></li>
+				<li><div class="circle">11</div></li>
+				<li><div class="circle">12</div></li>
+				<li><div class="circle">13</div></li>
+				<li><div class="circle">14</div></li>
+				<li><div class="circle">15</div></li>
+				<li><div class="circle">16</div></li>
+				<li><div class="circle">17</div></li>
+				<li><div class="circle">18</div></li>
+				<li><div class="circle">19</div></li>
+				<li><div class="circle">20</div></li>
+				<li><div class="circle">21</div></li>
+				<li><div class="circle">22</div></li>
+				<li><div class="circle">23</div></li>
+				<li><div class="circle">24</div></li>
+				<li><div class="circle">25</div></li>
+				<li><div class="circle">26</div></li>
+				<li><div class="circle">27</div></li>
+				<li><div class="circle">28</div></li>
+				<li><div class="circle">29</div></li>
+				<li><div class="circle">30</div></li>
+				<li class="month-next"></li>
+				<li class="month-next"></li>
+			</ul>
 		</div>
 	</main>
 
 	<!-- Left -->
-	<aside class="hg__left"> <br>
+  <aside class="hg__left"> <br>
 		<div class="left">
 			<div class="bg"></div>
 			<div class="box">
@@ -170,22 +103,10 @@
 				<div class="btn"><button class="effect">Do with friends</button></div>
 				<div class="btn"><button class="effect">New activity</button></div>
 				<div class="btn"><button class="effect">Complete</button></div>
-			<div class="scaleable-wrapper" id="scaleable-wrapper">
-				<div class="wrap" id="wrap">
-					<div class="bg"></div>
-					<header>stayinside</header> <br>
-					<div class="box-img fill"><img src="assets/placeholder.gif"></div>
-					<br>
-					<div class="btn center"><button class="effect bttn">View on r/LearnUslessTalents</button></div>
-					<div class="btn center"><button class="effect bttn">Do with friends</button></div>
-					<div class="btn center"><button class="effect bttn">New activity</button></div>
-					<div class="btn center"><button class="effect bttn">Complete</button></div>
-					<div class="center"><img src="assets/doge.gif" alt="Doge"></div>
-				</div>
 			</div>
 			<img src="assets/doge.gif" alt="Doge" width="204" height="161">
 		</div>
 	</aside>
-</body>
 
+</body>
 </html>

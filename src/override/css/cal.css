@@ -1,0 +1,75 @@
+header {
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  color: ##757575;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(7, 0fr);
+  grid-gap: 0.5em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  display: grid;
+  align-items: left;
+  justify-content: top;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  border-radius: 10px;
+}
+
+.day-bg {
+  background: -webkit-linear-gradient(#FB927F, #FCD88E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #FB927F, #FCD88E;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 2vw;
+  height: 2vw;
+  padding: 2px;
+  margin: 4px;
+
+  background: #C4C4C4;
+  color: white;
+  text-align: center;
+}
+
+ul.weekdays {
+  margin-bottom: 1em;
+}
+
+ul.day-grid li {
+  height: 5vw;
+  width: 5vw;
+  max-height: 100px;
+  border: 3px solid #787777;
+
+}
+
+ul.weekdays abbr[title] {
+  border: none;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  ul {
+    grid-gap: .25em;
+  }
+
+  ul.weekdays li {
+    font-size: 0;
+  }
+
+  ul.weekdays > li abbr:after {
+      content: attr(title);
+      font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    }
+}

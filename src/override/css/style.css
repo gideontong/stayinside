@@ -18,6 +18,23 @@
   position: relative;
 }
 
+.smallbtn {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background: #fcad26;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-block;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+}
+
 .hg__header {
   grid-area: header;
 }

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>stayinside</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
 	<link rel="stylesheet" href="css/cal.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="script" href="js/functions.css">
+
 </head>
 <body>
 
 	<!-- Overlay -->
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	<button onclick="document.getElementById('idlogin-btn').style.display='block'" style="width:auto;">Login</button>
 
-	<div id="id01" class="modal">
+	<div id="idlogin-btn" class="modal">
 
 	  <form class="modal-content animate" action="/action_page.php" method="post">
 	    <div class="imgcontainer">
-	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-	      <header>stayinside</header>
+	      <span onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">&times;</span>
 	    </div>
 
 	    <div class="container">
@@ -25,7 +29,7 @@
 	      <label for="psw"><b>Password</b></label>
 	      <input type="password" placeholder="Enter Password" name="psw" required>
 
-	      <button onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Create account</button>
+	      <button onclick="document.getElementById('idlogin-btn').style.display='none'" class="close" title="Close Modal">Create account</button>
 	    </div>
 
 	    <div class="container" style="background-color:#f1f1f1">
@@ -35,14 +39,18 @@
 
 	<div class="">
 		<div class="left">
-			<div class="bg"><img src="assets/bg.png" alt="Background" style="width:500px;height:100vh";></div>
-			<br>
-				<div class="box-img"></div>
-				<br>
-				<div class="btn"><button class="effect">View on r/</button></div>
-				<div class="btn"><button class="effect">Do with friends</button></div>
-				<div class="btn"><button class="effect">New activity</button></div>
-				<div class="btn"><button class="effect">Complete</button></div>
+			<div class="scaleable-wrapper" id="scaleable-wrapper">
+			  <div class="wrap" id="wrap">
+			    <div class="bg"></div>
+					<header>stayinside</header>
+					<div class="box-img"></div>
+					<br>
+					<div class="btn"><button class="effect">View on r/</button></div>
+					<div class="btn"><button class="effect">Do with friends</button></div>
+					<div class="btn"><button class="effect">New activity</button></div>
+					<div class="btn"><button class="effect">Complete</button></div>
+			  </div>
+			</div>
 		</div>
 
 	<div>
@@ -107,15 +115,7 @@
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 </script>
 
 </body>

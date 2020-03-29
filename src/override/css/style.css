@@ -1,17 +1,31 @@
 /* import font: assistant */
 @import url('https://fonts.googleapis.com/css?family=Assistant:600,700,800&display=swap');
 
-body {
-  font-family: 'Assistant', sans-serif;
-  display: grid;
-  background: white;
+.hg__header { grid-area: header; }
+.hg__footer { grid-area: footer; }
+.hg__main { grid-area: main; }
+.hg__left { grid-area: navigation; }
+
+header{
+  text-align: center;
 }
 
-header {
-  text-align: center;
-  font-size: 60px;
-  color: #757575;
-  font-weight: 800;
+.hg {
+  font-family: 'Assistant', sans-serif;
+	display: grid;
+	grid-template-areas: "navigation main ads"
+	                     "footer footer footer";
+	grid-template-columns: 30% 1fr;
+	grid-template-rows: 1fr 30px;
+	min-height: 100vh;
+}
+
+/* LEFT */
+.hg__left {
+  background-image: url("assets/bg.png");
+  position: relative;
+  background-size: 100%;
+  padding: 10px;
 }
 
 .box-img {
@@ -19,119 +33,39 @@ header {
   border:3px solid #000;
   background-color: white;
   border-radius: 20px;
-  z-index: 100;
   position: relative;
-  margin-left: 15px;
-  margin-right: 30px;
   padding: 10px;
   width: fill;
-  max-width: inherit;
 }
 
+@media screen and (max-width: 900px) {
+	.hg {
+		grid-template-areas: "navigation"
+		                     "main"
+		                     "footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100%
+							1fr
+							30px;
+	}
+
+  .hg__main {
+      align-items: center;
+  }
+}
+
+/* RIGHT */
 .login {
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  z-index: 1;
-  background-color: white;
-  margin: 5% auto 15% auto;
-  border: 1px solid #888;
-  width: 50%;
+  align-items: right;
 }
 
-.cal {
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.left {
-  float: left;
-  width: 30%;
-  background-color: #FBE1DF;
-  margin: -10px;
-}
-
-.right {
-  width: 70%;
-  float: right;
-}
-
-.bg {
-  z-index: 0;
-  position: absolute;
-  margin: -10px;
-  float: left;
-}
-
-.btn {
-  font-size: 10px;
-  padding: 3px;
-  text-align: center;
-}
-
-.effect {
-  border-radius: 15px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: -1px 0 0 1px #FA7F8E,
-              -1px -1px 0 1px #FB927F,
-              -1px -1px 0 1px #FB927F,
-              0 -1px 0 1px #FDC655,
-              0 1px 0 1px #FDC655,
-              1px -1px 0 1px #F0E1C2,
-              1px 1px 0 1px #F0E1C2,
-              1px 0 0 1px #FFC7C0;
-  background: linear-gradient(left, #FCAA6C, #FFC7C0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: black;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #FCAA6C;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 10px;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
+.hg__main {
+  padding: 10px;
 }
 
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -140,9 +74,9 @@ img.avatar {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.6);
   padding-top: 60px;
+  border-radius: 10px;
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
@@ -173,4 +107,9 @@ img.avatar {
 @keyframes animatezoom-back {
   from {transform: scale(1)}
   to {transform: scale(0)}
+}
+
+/* FOOTER */
+.hg__footer {
+  background-color: pink;
 }

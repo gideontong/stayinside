@@ -2,26 +2,27 @@ ul {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 1em;
+  align-items: center;
 }
 
 li {
   display: grid;
-  align-items: left;
-  justify-content: top;
   border-radius: 10px;
+  padding-left: -10vw;
 }
 
 .day-bg {
   background: -webkit-linear-gradient(#FB927F, #FCD88E);
   text-align: center;
-  font-size: 25px;
+  font-size: 3vh;
   width: 7.5vw;
 }
 
 .circle {
+  font-size: 2vh;
   border-radius: 50%;
-  width: 2vw;
-  height: 2vw;
+  width: 1.8vw;
+  height: 1.8vw;
   padding: 2px;
   margin: 4px;
   background: #C4C4C4;
@@ -29,12 +30,40 @@ li {
   text-align: center;
 }
 
-ul.weekdays {
-  margin-bottom: 1em;
-}
-
 ul.day-grid li {
   height: 7vw;
   width: 7vw;
   border: 3px solid #787777;
+}
+
+@media screen and (max-width: 900px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  li {
+    display: grid;
+    border-radius: 8px;
+    transform: translateX(-4.5vh);
+  }
+
+  .circle {
+    font-size: 1.25vh;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    padding: 2px;
+    margin: 4px;
+    background: #C4C4C4;
+    color: white;
+    text-align: center;
+  }
+
+  ul.day-grid li {
+    height: 7vw;
+    width: 7vw;
+    border: 2px solid #787777;
+  }
 }
